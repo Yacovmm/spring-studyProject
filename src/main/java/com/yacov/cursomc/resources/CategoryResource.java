@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.yacov.cursomc.domain.Categoria;
 import com.yacov.cursomc.services.CategoryService;
 
+
 @RestController
 @RequestMapping(value="/categorias")
 public class CategoryResource {
