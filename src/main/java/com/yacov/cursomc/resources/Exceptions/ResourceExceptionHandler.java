@@ -1,6 +1,5 @@
 package com.yacov.cursomc.resources.Exceptions;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.http.HttpStatus;
