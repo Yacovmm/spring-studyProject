@@ -1,6 +1,7 @@
 package com.yacov.cursomc.resources.Exceptions;
 
 import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +15,7 @@ import com.yacov.cursomc.services.exceptions.ObjectNotFoundException;
 public class ResourceExceptionHandler {
 	
 	@ExceptionHandler(ObjectNotFoundException.class)
-	public ResponseEntity<StandardError> objectNorFound (ObjectNotFoundException e, HttpServlet request){
+	public ResponseEntity<StandardError> objectNorFound (ObjectNotFoundException e, HttpServletRequest request){
 		
 		StandardError err = new StandardError(HttpStatus.NOT_FOUND.value(), e.getMessage(), System.currentTimeMillis());
 		
